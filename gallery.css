@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background-color: rgb(134, 183, 232);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  margin: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 77, 230);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.pictures {
+  background-color: lightskyblue;
+}
+
+.pictures p {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+
+.images {
+  padding: 0.5rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  box-shadow: 0 0 10px skyblue;
+  grid-template-areas:
+    "a b c d"
+    "a e i d"
+    "f g h h"
+
+  ;
+  grid-template-columns: 1fr 0.8fr 0.4fr 0.8fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+  filter: brightness(200%);
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+  filter: contrast(200%)
+}
+
+.e {
+  grid-area: e;
+  filter: saturate(30%)
+}
+
+.f {
+  grid-area: f;
+  filter: grayscale(0.5);
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.i {
+  grid-area: i;
+}
+
+#contact {
+  background-color: rgb(161, 230, 231);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+#contact h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+label {
+  display: inline-block;
+  width: 5rem;
+  margin: 0.5rem 0;
+}
+
+textarea {
+  height: 4rem;
+  width: 20rem;
+  vertical-align: top;
+}
+
+input {
+  height: 1.6rem;
+  width: 20rem;
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 0.2rem;
+  margin: 0.5rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.send {
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.send_message {
+  width: 8rem;
+  height: 1.8rem;
+  background-color: rgb(193, 187, 221);
+  border: none;
+  border-radius: 5px;
+}
+
+button a {
+  color: black;
+}
+
+.media {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem 0 1.5rem;
+}
+
+.icons a {
+  color: black;
+  padding: 0.5rem;
+}
+
+/* for mobile button */
+.mobile {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: black;
+  display: none;
+}
+
+@media(max-width:800px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  ul.responsive {
+    display: block;
+    background-color: white;
+    color: #333;
+    position: absolute;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+  }
+
+  ul.responsive li {
+    display: block;
+    margin: 1rem;
+  }
+
+  header.bg .mobile {
+    color: #333;
+  }
+}
+
+
+/* mobile responsiveness */
+@media(max-width:576px) {
+
+  #contact {
+    padding: 0.5rem;
+  }
+
+  #contact h3 {
+    margin-bottom: 0%;
+  }
+
+  input,
+  textarea {
+    display: flex;
+    max-width: 15rem;
+    margin-top: 0;
+  }
+
+  .copyright {
+    font-size: small;
+  }
+}
