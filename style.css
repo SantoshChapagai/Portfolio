@@ -483,3 +483,76 @@ button a {
     }
 
 }
+
+/* for gallery */
+.pictures {
+    background-color: lightskyblue;
+}
+
+.pictures p {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+
+.images {
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    box-shadow: 0 0 10px skyblue;
+    grid-template-areas:
+        "a b c d"
+        "a e i d"
+        "f g h h"
+
+    ;
+    grid-template-columns: 1fr 0.8fr 0.4fr 0.8fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+    filter: brightness(200%);
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+    filter: contrast(200%)
+}
+
+.e {
+    grid-area: e;
+    filter: saturate(30%)
+}
+
+.f {
+    grid-area: f;
+    filter: grayscale(0.5);
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+}
+
+.i {
+    grid-area: i;
+}

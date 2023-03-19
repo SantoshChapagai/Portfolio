@@ -33,6 +33,6 @@
 - the background color of the header changes when the to top button appears.
 
 #### Project link
-<a href="https://public.bc.fi/s2300121/Santosh-portfolio/"> View here </a>
+<a href="https://public.bc.fi/s2300121/Santosh-portfolio/" target="_blank"> View here </a>
 
 
