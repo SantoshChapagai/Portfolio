@@ -32,7 +32,7 @@
 - the to top button appears after scrolling down the page.
 - the background color of the header changes when the to top button appears.
 
-#### Live link
+#### Project link
 <a href="https://public.bc.fi/s2300121/Santosh-portfolio/"> View here </a>
 
 
