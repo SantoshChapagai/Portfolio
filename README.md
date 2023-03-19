@@ -1,5 +1,7 @@
 # Portfolio
 
+### Responsive for desktop and mobile phones.
+
 ### Languages
 - HTML, CSS, JavaScript
 
@@ -25,9 +27,12 @@
 - contains contact option with name email and message.
 
 ### More 
-# # Responsive for desktop and mobile phones.
+
 - button to take the page to start on the right button corner.
 - the to top button appears after scrolling down the page.
 - the background color of the header changes when the to top button appears.
+
+#### Live link
+<a href="https://public.bc.fi/s2300121/Santosh-portfolio/"> View here </a>
 
 
